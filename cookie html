@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <body>
+   <form name="Form1" method="post" action="/helloApp">
+   <B>Enter a value </B>
+   <input type=textbox name="data" size=25 >
+   <input type=submit value="Submit">
+   </form>
+   <br>
+   <a href="/getCookies">Get details of cookies</a>
+  </body>
+</html>
