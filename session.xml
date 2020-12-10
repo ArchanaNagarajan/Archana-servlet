@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+  <welcome-file-list>
+    <welcome-file>New.html</welcome-file>
+    <welcome-file>NewFile.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>  
+    <description></description> 
+    <display-name>Session</display-name>  
+    <servlet-name>Session</servlet-name>  
+    <servlet-class>Session</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>Session</servlet-name>  
+    <url-pattern>/session</url-pattern>   
+  </servlet-mapping>
+   <servlet>  
+    <description></description> 
+    <display-name>LogOutSession</display-name>  
+    <servlet-name>LogOutSession</servlet-name>  
+    <servlet-class>LogOutSession</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LogOutSession</servlet-name>  
+    <url-pattern>/LogOutSession</url-pattern>   
+  </servlet-mapping>
+  <session-config>
+  <session-timeout>1</session-timeout>
+  </session-config> 
+</web-app>
